@@ -9,7 +9,6 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "animejs": "^3.2.1",
     "core-js": "^3.18.1",
     "moment": "^2.29.1",
     "nuxt": "^2.15.7"

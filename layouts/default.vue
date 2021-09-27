@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col min-h-screen bg-gray-200 dark:bg-gray-800">
 
-    <div class="absolute px-5 py-9 select-none">
-      <button class="px-5 py-2 dark:text-white text-gray-800" @click="switchTheme">
+    <div class="absolute px-3 py-3 select-none">
+      <button class="dark:text-white text-gray-800" @click="switchTheme">
         <span v-if="this.darkMode">☀</span>
         <span v-else>🌑</span>
       </button>

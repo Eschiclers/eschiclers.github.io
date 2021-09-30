@@ -92,13 +92,6 @@
               rel="noopener noreferrer"
               target="_blank"
               >chicle@protonmail.com</a>&gt;
-              -
-              <a
-              href="https://github.com/Eschiclers/eschiclers.github.io/commit/d1bba6f083ca13892d9a9626e3080e56feda0f3c"
-              class="text-gray-400 dark:hover:text-gray-200 hover:text-gray-800"
-              rel="noopener noreferrer"
-              target="_blank"
-              >d1bba6f</a>
           </p>
           <span
             class="

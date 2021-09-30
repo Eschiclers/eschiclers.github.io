@@ -11,14 +11,16 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Chicle / Eschiclers website' },
+      { hid: 'description', name: 'description', content: 'This is the Chicle / Eschiclers website. Programmer and systems administrator. Here you can find some of my public projects hosted.' },
+      { name: 'author', content: 'Chicle' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'keywords', content: 'Eschiclers, Chicle, programación, programador, sysadmin, github, nuxt, vue, node, javascript, typescript' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#1F2937' },
       { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
       { name: 'theme-color', content: '#1F2937' },
     ],
     link: [
-      //{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       { rel: "apple-touch-icon", sizes: "57x57", href: "/favicon/apple-icon-57x57.png" },
       { rel: "apple-touch-icon", sizes: "60x60", href: "/favicon/apple-icon-60x60.png" },
       { rel: "apple-touch-icon", sizes: "72x72", href: "/favicon/apple-icon-72x72.png" },

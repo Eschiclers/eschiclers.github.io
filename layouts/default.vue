@@ -15,8 +15,16 @@
     -->
     <div class="flex-grow">
       <div class="container mx-auto p-5">
-        <div class="dark:text-white text-gray-700 text-center font-bold text-6xl">
-          {{ this.title }}
+        <div class="flex flex-wrap justify-center dark:text-white text-gray-700 font-bold text-6xl">
+          <vue-typed-js 
+            :strings="this.greetings" 
+            :loop="true" 
+            :typeSpeed="75" 
+            :backSpeed="75" 
+            :backDelay="3500"
+          >
+            <p class="typing"></p>
+          </vue-typed-js>
         </div>
       </div>
     </div>
@@ -227,8 +235,7 @@ export default Vue.extend({
         github: 'https://github.com/eschiclers',
         twitter: 'https://twitter.com/Eschiclers'
       },
-      title: "Hola",
-      titles: ["Hola", "Hello", "Bonjour", "Hallo", "Ciao", "Salut", "Hej", "Namaste"]
+      greetings: ["Hola", "Hello", "Bonjour", "Hallo", "Ciao", "Salut", "Hej", "Namaste"]
     };
   },
   computed: {},
@@ -245,10 +252,6 @@ export default Vue.extend({
       }
       this.darkMode = !this.darkMode;
     },
-
-    rotateTitle() {
-      this.title = this.titles[Math.floor(Math.random() * this.titles.length)];
-    }
   },
   mounted() {
     if(window.localStorage.getItem("theme") === "dark") {
@@ -258,11 +261,6 @@ export default Vue.extend({
       this.darkMode = false;
       document.documentElement.classList.remove("dark");
     }
-
-    this.rotateTitle();
-    setInterval(() => {
-      this.rotateTitle();
-    }, 3500);
   },
   beforeCreate() {},
   created() {},

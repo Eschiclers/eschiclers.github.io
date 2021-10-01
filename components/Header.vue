@@ -42,7 +42,8 @@
               dark:text-gray-300
               sm:ml-4
               sm:pl-4
-              sm:border-l-2 sm:border-gray-200 sm:dark:border-gray-500
+              sm:border-l-2 sm:border-gray-200
+              sm:dark:border-gray-500
               sm:py-2
               sm:mt-0
               mt-4
@@ -60,10 +61,10 @@
             "
           >
             <li class="">
-              <a class="dark:hover:text-gray-500 hover:text-gray-300" href="#">Home</a>
+              <nuxt-link class="dark:hover:text-gray-500 hover:text-gray-300" to="/">Home</nuxt-link>
             </li>
             <li>
-              <a class="dark:hover:text-gray-500 hover:text-gray-300" href="#">About me</a>
+              <nuxt-link class="dark:hover:text-gray-500 hover:text-gray-300" to="/about-me">About me</nuxt-link>
             </li>
           </ul>
         </div>

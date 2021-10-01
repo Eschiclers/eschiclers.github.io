@@ -52,14 +52,15 @@
             class="text-gray-400 dark:hover:text-gray-200 hover:text-gray-800"
             rel="noopener noreferrer"
             target="_blank"
-            >@Eschiclers</a>
-            -
-            &lt;<a
+            >@Eschiclers</a
+          >
+          - &lt;<a
             :href="this.contact.email"
             class="text-gray-400 dark:hover:text-gray-200 hover:text-gray-800"
             rel="noopener noreferrer"
             target="_blank"
-            >chicle@protonmail.com</a>&gt;
+            >chicle@protonmail.com</a
+          >&gt;
         </p>
         <span
           class="
@@ -93,7 +94,9 @@
               width="24"
               height="24"
             >
-              <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+              <path
+                d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
+              />
             </svg>
           </a>
           <!-- Telegram -->
@@ -189,11 +192,11 @@ export default Vue.extend({
   data() {
     return {
       contact: {
-        email: 'mailto:chicle@protonmail.com',
-        telegram: 'https://telegram.me/eschiclers',
-        github: 'https://github.com/eschiclers',
-        twitter: 'https://twitter.com/Eschiclers'
-      }
+        email: "mailto:chicle@protonmail.com",
+        telegram: "https://telegram.me/eschiclers",
+        github: "https://github.com/eschiclers",
+        twitter: "https://twitter.com/Eschiclers",
+      },
     };
   },
 });

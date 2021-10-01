@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{218:function(e,n,t){"use strict";t.r(n);var l=t(1).a.extend({layout:"Header"}),r=t(30),component=Object(r.a)(l,(function(){var e=this.$createElement;return(this._self._c||e)("header")}),[],!1,null,null,null);n.default=component.exports;installComponents(component,{Header:t(218).default})}}]);

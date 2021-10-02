@@ -24,7 +24,14 @@ export default Vue.extend({
   },
   computed: {},
   methods: {},
-  mounted() {},
+  mounted() {
+    // Load theme
+    if(window.localStorage.getItem("dark") === "true" || (!('dark' in window.localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  },
   beforeCreate() {},
   created() {},
 });

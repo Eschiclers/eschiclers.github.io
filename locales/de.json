@@ -1,0 +1,9 @@
+{
+  "navbar": {
+    "home": "Heim",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "fork": "Fork mich auf Github!"
+  }
+}

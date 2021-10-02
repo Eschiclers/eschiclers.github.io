@@ -61,10 +61,10 @@
             "
           >
             <li class="">
-              <nuxt-link class="dark:hover:text-gray-500 hover:text-gray-300" to="/">Home</nuxt-link>
+              <nuxt-link class="dark:hover:text-gray-500 hover:text-gray-300" to="/">{{ $t('navbar.home') }}</nuxt-link>
             </li>
             <li>
-              <nuxt-link class="dark:hover:text-gray-500 hover:text-gray-300" to="/about-me">About me</nuxt-link>
+              <nuxt-link class="dark:hover:text-gray-500 hover:text-gray-300" to="/about-me"> {{ $t('navbar.about') }}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -85,8 +85,11 @@
               class="dark:hover:text-gray-500 hover:text-gray-300"
               target="_blank"
               href="https://github.com/Eschiclers/eschiclers.github.io"
-              >Fork me on Github!</a
+              >{{ $t("navbar.fork") }}</a
             >
+          </li>
+          <li>
+            <LanguageSelector />
           </li>
           <li>
             <SwitchTheme />

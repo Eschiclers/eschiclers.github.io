@@ -1,0 +1,9 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "fork": "¡Bifurcame en Github!"
+  }
+}

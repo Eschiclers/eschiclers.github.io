@@ -37,12 +37,13 @@ export default {
       { rel: "manifest", href: "/manifest.json" },
     ],
     script: [
-      { src: '~/assets/load-theme.js' },
+      //{ src: '~/assets/load-theme.js' },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/node_modules/flag-icon-css/css/flag-icon.min.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -64,7 +65,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     //'bootstrap-vue/nuxt',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: ['en', 'es', 'ca', 'fr', 'de'],
+    defaultLocale: 'en',
+    vueI18n: {
+      locale: 'en',
+      messages: {
+        en: require('./locales/en.json'),
+        es: require('./locales/es.json'),
+        ca: require('./locales/ca.json'),
+        fr: require('./locales/fr.json'),
+        de: require('./locales/de.json'),
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

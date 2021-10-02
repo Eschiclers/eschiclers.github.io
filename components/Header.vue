@@ -57,7 +57,7 @@
               items-center
               md:justify-start
               justify-center
-              space-x-4
+              space-x-3
             "
           >
             <li class="">
@@ -77,7 +77,7 @@
             items-center
             md:justify-start
             justify-center
-            space-x-4
+            space-x-3
           "
         >
           <li class="">

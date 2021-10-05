@@ -69,6 +69,7 @@ export default {
       '@nuxtjs/i18n', {
         locales: ['en', 'es', 'ca', 'fr', 'de'],
         parsePages: false,
+        strategy: 'no_prefix',
         defaultLocale: 'en',
         vueI18n: {
           locale: 'en',

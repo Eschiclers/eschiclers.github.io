@@ -107,10 +107,6 @@ export default Vue.extend({
   transform-origin: top center;
 }
 
-.current-language {
-  @apply text-green-700;
-}
-
 @keyframes growDown {
   0% {
     transform: scaleY(0);

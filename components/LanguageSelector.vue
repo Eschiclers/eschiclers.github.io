@@ -54,10 +54,7 @@ export default Vue.extend({
   name: "LanguageSelector",
   data() {
     return {
-      currentLanguage: {
-        name: "English",
-        iso: "en",
-      },
+      currentLanguage: {},
       languages: [
         {
           name: "English",
@@ -90,11 +87,10 @@ export default Vue.extend({
     },
   },
   mounted() {
-    this.$i18n.locale =
-      JSON.parse(window.localStorage.getItem("language")).iso || "en";
-    this.currentLanguage =
-      JSON.parse(window.localStorage.getItem("language")) ||
-      this.currentLanguage;
+    if(window.localStorage.getItem("language") === null){ window.localStorage.setItem("language", JSON.stringify({name: "English", iso: "en"})); } // First load (have not lang saved)
+    
+    this.currentLanguage = JSON.parse(window.localStorage.getItem("language"));
+    this.$i18n.locale = JSON.parse(window.localStorage.getItem("language")).iso;
   },
   created() {},
 });

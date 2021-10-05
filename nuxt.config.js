@@ -87,10 +87,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    publicPath: './assets/',
+    publicPath: '/assets/',
   },
 
   router: {
-    trailingSlash: false
+    trailingSlash: false,
+    middleware: [ 'remove-trailing-slash' ],
   }
 }

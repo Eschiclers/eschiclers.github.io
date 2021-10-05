@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002Fassets\u002Fstatic\u002F1633424782",layout:"default",error:{statusCode:500,message:"Unknown middleware remove-trailing-slash"},serverRendered:false,routePath:"\u002Fabout-me",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fassets\u002F",cdnURL:null}}};

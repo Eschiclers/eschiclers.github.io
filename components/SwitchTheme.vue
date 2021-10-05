@@ -11,7 +11,7 @@
     <label for="switch" class="label bg-gray-600 dark:bg-gray-200">
       <span class="">🌑</span>
       <span class="">☀</span>
-      <div class="ball dark:bg-gray-600 bg-gray-200 "></div>
+      <div class="ball dark:bg-gray-600 bg-gray-200"></div>
     </label>
   </div>
 </template>
@@ -66,18 +66,20 @@ export default Vue.extend({
   methods: {
     switchTheme() {
       if (this.darkMode) {
-        window.localStorage.setItem("darkMode", "true");
-        window.localStorage.theme = "dark";
+        window.localStorage.setItem("dark", "true");
         document.documentElement.classList.add("dark");
       } else {
-        window.localStorage.setItem("darkMode", "false");
-        window.localStorage.theme = "light";
+        window.localStorage.setItem("dark", "false");
         document.documentElement.classList.remove("dark");
       }
+      this.darkMode = false;
     },
   },
   mounted() {
-    if (window.localStorage.getItem("theme") === "dark") {
+    if (window.localStorage.getItem("dark") === null) {
+      window.localStorage.setItem("dark", "false");
+    } // First load (have not theme saved)
+    if (window.localStorage.getItem("dark") === "true") {
       this.darkMode = true;
       document.documentElement.classList.add("dark");
     } else {

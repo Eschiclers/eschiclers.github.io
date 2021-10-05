@@ -92,6 +92,5 @@ export default {
 
   router: {
     trailingSlash: false,
-    middleware: [ 'remove-trailing-slash' ],
   }
 }

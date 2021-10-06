@@ -8,7 +8,7 @@
       :checked="darkMode"
       @change="switchTheme"
     />
-    <label for="switch" class="label bg-gray-600 dark:bg-gray-200">
+    <label for="switch" class="label bg-gray-600 dark:bg-gray-200 cursor-pointer">
       <span class="">🌑</span>
       <span class="">☀</span>
       <div class="ball dark:bg-gray-600 bg-gray-200"></div>

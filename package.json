@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^7.0.3",
-    "core-js": "^3.18.1",
+    "core-js": "^3.18.2",
     "flag-icon-css": "^3.5.0",
     "moment": "^2.29.1",
     "nuxt": "^2.15.7",

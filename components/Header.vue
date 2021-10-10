@@ -81,7 +81,7 @@
                   href="https://github.com/Eschiclers/eschiclers.github.io"
                   target="_blank"
                   class="
-                    dark:text-gray-300
+                    dark:text-gray-200
                     dark:hover:bg-gray-700
                     dark:hover:text-white
                     text-gray-800
@@ -98,7 +98,7 @@
 
                 <LanguageSelector
                   class="
-                  dark:text-gray-400
+                  dark:text-gray-200
 	                dark:hover:text-white
 	                dark:hover:bg-gray-700
 	                text-gray-800
@@ -126,7 +126,7 @@
                 justify-center
                 p-2
                 rounded-md
-                dark:text-gray-400
+                dark:text-gray-200
                 dark:hover:text-white
                 dark:hover:bg-gray-700
                 text-gray-800
@@ -183,7 +183,7 @@
           <nuxt-link
             to="/"
             class="
-              dark:text-gray-300
+              dark:text-gray-200
               dark:hover:bg-gray-700
               dark:hover:text-white
               text-gray-800
@@ -203,7 +203,7 @@
           <nuxt-link
             to="/about-me"
             class="
-              dark:text-gray-300
+              dark:text-gray-200
               dark:hover:bg-gray-700
               dark:hover:text-white
               text-gray-800
@@ -222,7 +222,7 @@
           <nuxt-link
             to="/projects"
             class="
-              dark:text-gray-300
+              dark:text-gray-200
               dark:hover:bg-gray-700
               dark:hover:text-white
               text-gray-800
@@ -251,7 +251,7 @@
                 rounded-md
                 text-base
                 font-medium
-                dark:text-gray-400
+                dark:text-gray-200
                 dark:hover:text-white
                 dark:hover:bg-gray-700
                 text-gray-800
@@ -268,7 +268,7 @@
                 text-base
                 font-medium
 								rounded-md
-                dark:text-gray-400
+                dark:text-gray-200
                 dark:hover:text-white
                 dark:hover:bg-gray-700
                 text-gray-800

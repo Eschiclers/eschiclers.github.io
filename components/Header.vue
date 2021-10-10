@@ -98,11 +98,12 @@
 
                 <LanguageSelector
                   class="
-                    dark:text-gray-300
-                    dark:hover:text-white
-                    text-gray-800
-                    hover:text-gray-900
-                    hover:bg-gray-300
+                  dark:text-gray-400
+	                dark:hover:text-white
+	                dark:hover:bg-gray-700
+	                text-gray-800
+	                hover:text-gray-900
+	                hover:bg-gray-300
 										rounded-md
                     py-2
                     text-sm

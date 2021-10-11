@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center select-none">
+  <div class="flex items-center select-none">
     <input
       type="checkbox"
       v-model="darkMode"

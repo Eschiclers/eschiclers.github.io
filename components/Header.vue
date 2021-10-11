@@ -238,14 +238,12 @@
             >{{ $t("navbar.projects") }}</nuxt-link
           >
         </div>
-        <div class="pt-4 pb-3 border-t border-gray-700">
-          <div class="flex items-center px-5"></div>
-          <div class="mt-3 px-2 space-y-1">
+        <div class="items-center pt-3 pb-3 border-b border-t border-gray-700">
+          <div class="flex flex-row items-center space-x-4 px-2 space-y-1">
             <a
               href="https://github.com/Eschiclers/eschiclers.github.io"
               target="_blank"
               class="
-                block
                 px-3
                 py-2
                 rounded-md
@@ -263,7 +261,6 @@
 
             <LanguageSelector
               class="
-                block
                 py-2
                 text-base
                 font-medium
@@ -277,7 +274,7 @@
               "
             />
 
-            <SwitchTheme class="block py-2 text-base font-medium" />
+            <SwitchTheme class="py-2 px-3 text-base font-medium" />
           </div>
         </div>
       </div>

@@ -10,9 +10,9 @@
       <div
         class="
           container
-          px-5
           py-8
           mx-auto
+					max-w-7xl px-4 sm:px-6 lg:px-8
           flex
           items-center
           sm:flex-row
@@ -31,7 +31,7 @@
             dark:text-gray-200
           "
         >
-          <span class="ml-3 text-xl">Chicle.dev</span>
+          <span class="text-xl">Chicle.dev</span>
         </a>
         <p
           class="

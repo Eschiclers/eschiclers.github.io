@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-gray-200 dark:bg-gray-800">
+  <div class="flex flex-col min-h-screen bg-gray-200 dark:bg-gray-800 transition-all">
     <Header />
 
     <Nuxt class="flex-grow" />

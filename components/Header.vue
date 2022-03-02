@@ -34,6 +34,24 @@
                   >{{ $t("navbar.home") }}</nuxt-link
                 >
 
+                <a
+                  href="https://blog.chicle.dev/"
+                  class="
+                dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white
+                text-gray-800
+                hover:text-gray-900 hover:bg-gray-300
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+                duration-300
+                ease-linear
+              "
+                  >Blog</a
+                >
+
                 <nuxt-link
                   class="
                     dark:text-gray-200
@@ -208,7 +226,23 @@
               aria-current="page"
               >{{ $t("navbar.home") }}</nuxt-link
             >
-
+            <a
+              href="https://blog.chicle.dev/"
+              class="
+                dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white
+                text-gray-800
+                hover:text-gray-900 hover:bg-gray-300
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+                duration-300
+                ease-linear
+              "
+              >Blog</a
+            >
             <nuxt-link
               to="/about-me"
               class="
@@ -299,15 +333,15 @@ export default Vue.extend({
   layout: "Header",
   data() {
     return {
-      isOpen: false,
+      isOpen: false
     };
   },
   methods: {
     setIsOpen(isOpen) {
       this.isOpen = isOpen;
-    },
+    }
   },
-  mounted() {},
+  mounted() {}
 });
 </script>
 

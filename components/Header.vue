@@ -20,13 +20,14 @@
                     dark:hover:text-white
                     dark:hover:bg-gray-700
                     text-gray-800
-                    hover:text-gray-900
-                    hover:bg-gray-300
+                    hover:text-gray-900 hover:bg-gray-300
                     px-3
                     py-2
                     rounded-md
                     text-sm
                     font-medium
+                    duration-300
+                    ease-linear
                   "
                   aria-current="page"
                   to="/"
@@ -39,13 +40,14 @@
                     dark:hover:text-white
                     dark:hover:bg-gray-700
                     text-gray-800
-                    hover:text-gray-900
-                    hover:bg-gray-300
+                    hover:text-gray-900 hover:bg-gray-300
                     px-3
                     py-2
                     rounded-md
                     text-sm
                     font-medium
+                    duration-300
+                    ease-linear
                   "
                   to="/about-me"
                 >
@@ -58,13 +60,14 @@
                     dark:hover:text-white
                     dark:hover:bg-gray-700
                     text-gray-800
-                    hover:text-gray-900
-                    hover:bg-gray-300
+                    hover:text-gray-900 hover:bg-gray-300
                     px-3
                     py-2
                     rounded-md
                     text-sm
                     font-medium
+                    duration-300
+                    ease-linear
                   "
                   to="/projects"
                   >{{ $t("navbar.projects") }}</nuxt-link
@@ -85,29 +88,31 @@
                     dark:hover:bg-gray-700
                     dark:hover:text-white
                     text-gray-800
-                    hover:text-gray-900
-                    hover:bg-gray-300
+                    hover:text-gray-900 hover:bg-gray-300
                     px-3
                     py-2
                     rounded-md
                     text-sm
                     font-medium
+                    duration-300
+                    ease-linear
                   "
                   >{{ $t("navbar.fork") }}</a
                 >
 
                 <LanguageSelector
                   class="
-                  dark:text-gray-200
-	                dark:hover:text-white
-	                dark:hover:bg-gray-700
-	                text-gray-800
-	                hover:text-gray-900
-	                hover:bg-gray-300
-										rounded-md
+                    dark:text-gray-200
+                    dark:hover:text-white
+                    dark:hover:bg-gray-700
+                    text-gray-800
+                    hover:text-gray-900 hover:bg-gray-300
+                    rounded-md
                     py-2
                     text-sm
                     font-medium
+                    duration-300
+                    ease-linear
                   "
                 />
 
@@ -126,12 +131,9 @@
                 justify-center
                 p-2
                 rounded-md
-                dark:text-gray-200
-                dark:hover:text-white
-                dark:hover:bg-gray-700
+                dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-700
                 text-gray-800
-                hover:text-gray-900
-                hover:bg-gray-300
+                hover:text-gray-900 hover:bg-gray-300
               "
               aria-controls="mobile-menu"
               aria-expanded="false"
@@ -177,107 +179,115 @@
       </div>
 
       <!-- Mobile menu, show/hide based on menu state. -->
-      <div v-if="isOpen" class="lg:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <nuxt-link
-            to="/"
-            class="
-              dark:text-gray-200
-              dark:hover:bg-gray-700
-              dark:hover:text-white
-              text-gray-800
-              hover:text-gray-900
-              hover:bg-gray-300
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-            "
-            aria-current="page"
-            >{{ $t("navbar.home") }}</nuxt-link
-          >
-
-          <nuxt-link
-            to="/about-me"
-            class="
-              dark:text-gray-200
-              dark:hover:bg-gray-700
-              dark:hover:text-white
-              text-gray-800
-              hover:text-gray-900
-              hover:bg-gray-300
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-            "
-            >{{ $t("navbar.about") }}</nuxt-link
-          >
-
-          <nuxt-link
-            to="/projects"
-            class="
-              dark:text-gray-200
-              dark:hover:bg-gray-700
-              dark:hover:text-white
-              text-gray-800
-              hover:text-gray-900
-              hover:bg-gray-300
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-            "
-            >{{ $t("navbar.projects") }}</nuxt-link
-          >
-        </div>
-        <div class="items-center pt-3 pb-3 border-b border-t border-gray-700">
-          <div class="flex flex-row items-center space-x-4 px-2 space-y-1">
-            <a
-              href="https://github.com/Eschiclers/eschiclers.github.io"
-              target="_blank"
+      <transition
+        enter-active-class="transition ease-out duration-300"
+        enter-class="opacity-0 translate-y-1"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition ease-in duration-300"
+        leave-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 translate-y-1"
+      >
+        <div v-if="isOpen" class="lg:hidden origin-top" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <nuxt-link
+              to="/"
               class="
+                dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white
+                text-gray-800
+                hover:text-gray-900 hover:bg-gray-300
+                block
                 px-3
                 py-2
                 rounded-md
                 text-base
                 font-medium
-                dark:text-gray-200
-                dark:hover:text-white
-                dark:hover:bg-gray-700
-                text-gray-800
-                hover:text-gray-900
-                hover:bg-gray-300
+                duration-300
+                ease-linear
               "
-              >{{ $t("navbar.fork") }}</a
+              aria-current="page"
+              >{{ $t("navbar.home") }}</nuxt-link
             >
 
-            <LanguageSelector
+            <nuxt-link
+              to="/about-me"
               class="
+                dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white
+                text-gray-800
+                hover:text-gray-900 hover:bg-gray-300
+                block
+                px-3
                 py-2
+                rounded-md
                 text-base
                 font-medium
-								rounded-md
-                dark:text-gray-200
-                dark:hover:text-white
-                dark:hover:bg-gray-700
-                text-gray-800
-                hover:text-gray-900
-                hover:bg-gray-300
+                duration-300
+                ease-linear
               "
-            />
+              >{{ $t("navbar.about") }}</nuxt-link
+            >
 
-            <SwitchTheme class="py-2 px-3 text-base font-medium" />
+            <nuxt-link
+              to="/projects"
+              class="
+                dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white
+                text-gray-800
+                hover:text-gray-900 hover:bg-gray-300
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+                duration-300
+                ease-linear
+              "
+              >{{ $t("navbar.projects") }}</nuxt-link
+            >
+          </div>
+          <div class="items-center pt-3 pb-3 border-b border-t border-gray-700">
+            <div class="flex flex-row items-center space-x-4 px-2 space-y-1">
+              <a
+                href="https://github.com/Eschiclers/eschiclers.github.io"
+                target="_blank"
+                class="
+                  px-3
+                  py-2
+                  rounded-md
+                  text-base
+                  font-medium
+                  dark:text-gray-200
+                  dark:hover:text-white
+                  dark:hover:bg-gray-700
+                  text-gray-800
+                  hover:text-gray-900 hover:bg-gray-300
+                  duration-300
+                  ease-linear
+                "
+                >{{ $t("navbar.fork") }}</a
+              >
+
+              <LanguageSelector
+                class="
+                  py-2
+                  text-base
+                  font-medium
+                  rounded-md
+                  dark:text-gray-200
+                  dark:hover:text-white
+                  dark:hover:bg-gray-700
+                  text-gray-800
+                  hover:text-gray-900 hover:bg-gray-300
+                  duration-300
+                  ease-linear
+                "
+              />
+
+              <SwitchTheme class="py-2 px-3 text-base font-medium" />
+            </div>
           </div>
         </div>
-      </div>
+      </transition>
     </nav>
   </header>
 </template>
